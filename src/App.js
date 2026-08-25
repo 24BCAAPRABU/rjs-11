@@ -18,6 +18,7 @@ function App() {
         <h1>Welcome {name}</h1>
       ) : (
         <>
+        <form class="container">
           <input
             type="text"
             ref={inputRef}
@@ -26,6 +27,7 @@ function App() {
           <button onClick={handleLogin}>
             Login
           </button>
+              </form>
         </>
       )}
     </>
