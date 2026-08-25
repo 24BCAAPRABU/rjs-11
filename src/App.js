@@ -1,5 +1,6 @@
-import React, { useRef, useState } from "react";
 import "./App.css";
+import React, { useRef, useState } from "react";
+
 function App() {
   const [name, setName] = useState("");
   const [loggedIn, setLoggedIn] = useState(false);
@@ -12,14 +13,11 @@ function App() {
   };
 
   return (
-    <>
+    <div>
       {loggedIn ? (
         <h1>Welcome {name}</h1>
       ) : (
         <>
-        <form class="container">
-
-        
           <input
             type="text"
             ref={inputRef}
@@ -28,10 +26,9 @@ function App() {
           <button onClick={handleLogin}>
             Login
           </button>
-          </form>
         </>
       )}
-    </>
+    </div>
   );
 }
 
