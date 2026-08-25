@@ -13,7 +13,7 @@ function App() {
   };
 
   return (
-    <div>
+    <>
       {loggedIn ? (
         <h1>Welcome {name}</h1>
       ) : (
@@ -28,7 +28,7 @@ function App() {
           </button>
         </>
       )}
-    </div>
+    </>
   );
 }
 
